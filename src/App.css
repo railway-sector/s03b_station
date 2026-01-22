@@ -1,0 +1,121 @@
+b {
+  color: orange;
+}
+
+/* calcite-label {
+  --calcite-color-text-1: #ffffff;
+  --calcite-font-size--1: 1.1rem;
+} */
+
+calcite-tabs {
+  --calcite-color-border-3: #555555;
+  --calcite-color-border-2: #555555;
+  --calcite-color-border-1: #555555;
+  border-style: solid;
+  border-width: 0.7;
+  border-top: rgb(0, 0, 0, 0);
+}
+
+calcite-action-bar {
+  --calcite-color-border-3: #555555;
+  --calcite-color-text-3: #bfbfbf;
+}
+
+calcite-shell {
+  --calcite-color-foreground-1: #2b2b2b;
+  --calcite-color-text-1: #ffffff;
+  --calcite-color-background: #2b2b2b;
+  --calcite-color-border-3: #555555;
+}
+
+calcite-shell-panel {
+  --calcite-color-foreground-1: #2b2b2b;
+  --calcite-color-foreground-2: #2b2b2b;
+  --calcite-color-border-3: #555555;
+}
+
+calcite-panel {
+  overflow-y: auto;
+  --calcite-color-foreground-1: #2b2b2b;
+  --calcite-color-foreground-2: #2b2b2b;
+  --calcite-color-text-2: #ffffff;
+  background-color: #2b2b2b;
+  --calcite-color-border-3: #555555;
+}
+
+calcite-list {
+  overflow-y: auto;
+  --calcite-color-border-3: #555555;
+}
+
+calcite-segmented-control {
+  margin-left: 35%;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.calcitePanelBasemaps {
+  display: grid;
+  width: 100%;
+  height: 100%;
+}
+
+.esri-view .esri-view-surface--touch-none:focus::after {
+  outline: none !important;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+  display: none;
+}
+
+.esri-legend__layer-caption {
+  display: none;
+}
+
+/* Header */
+.headerTitle {
+  color: white;
+  margin-left: 1rem;
+  font-size: 1.3rem;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.date {
+  color: gray;
+  font-size: 0.8rem;
+  margin-top: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.dropdownFilterLayout {
+  display: flex;
+  flex-direction: row;
+  font-size: 12px;
+  color: black;
+  margin: auto;
+}
+
+/* total Progress */
+
+.totalProgressNumber {
+  color: #6ede00;
+  font-size: 2.8rem;
+  font-weight: bold;
+  font-family: "calibri";
+  margin-left: 5.5%;
+}
+
+.totalProgressNumber2 {
+  color: white;
+  font-size: 1rem;
+  font-weight: normal;
+  margin-left: 6%;
+}
+
+/* Information panel */
+.informationDiv {
+  padding-right: 10px;
+}
