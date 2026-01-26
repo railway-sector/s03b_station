@@ -23,7 +23,6 @@ import {
   zoomToLayer,
 } from "../Query";
 import "@esri/calcite-components/dist/components/calcite-label";
-import { CalciteLabel } from "@esri/calcite-components-react";
 import { ArcgisScene } from "@arcgis/map-components/dist/components/arcgis-scene";
 
 // Dispose function
@@ -321,47 +320,53 @@ const ChartUnderground = () => {
     <>
       <div
         style={{
-          color: primaryLabelColor,
-          fontSize: "1.3rem",
-          marginLeft: "13px",
-          marginTop: "10px",
-          marginBottom: "-5px",
+          display: "flex",
+          marginTop: "3px",
+          marginLeft: "15px",
+          marginRight: "15px",
+          justifyContent: "space-between",
         }}
       >
-        Total Progress
-      </div>
-      <CalciteLabel layout="inline">
-        <div
-          style={{
-            color: valueLabelColor,
-            fontSize: "2.7rem",
-            fontWeight: "bold",
-            fontFamily: "calibri",
-            lineHeight: "1.2",
-            marginLeft: "30px",
-          }}
-        >
-          {percentCompleted}%
-        </div>
-
         <img
           src="https://EijiGorilla.github.io/Symbols/Station_Structures_icon.png"
           alt="Utility Logo"
           height={"55px"}
           width={"55px"}
-          style={{ marginLeft: "45%", display: "flex" }}
+          style={{ marginTop: "10px", marginLeft: "15px" }}
         />
-      </CalciteLabel>
-      <div
-        style={{
-          color: valueLabelColor,
-          fontSize: "1rem",
-          fontFamily: "calibri",
-          lineHeight: "1.2",
-          marginLeft: "30px",
-        }}
-      >
-        ({thousands_separators(totalCompleted)})
+        <dl style={{ alignItems: "center" }}>
+          <dt
+            style={{
+              color: primaryLabelColor,
+              fontSize: "1.1rem",
+              marginRight: "25px",
+            }}
+          >
+            TOTAL PROGRESS
+          </dt>
+          <dd
+            style={{
+              color: valueLabelColor,
+              fontSize: "2.1rem",
+              fontWeight: "bold",
+              fontFamily: "calibri",
+              lineHeight: "1.2",
+              margin: "auto",
+            }}
+          >
+            {percentCompleted} %
+          </dd>
+          <dd
+            style={{
+              color: valueLabelColor,
+              fontSize: "1.2rem",
+              fontFamily: "calibri",
+              lineHeight: "1.2",
+            }}
+          >
+            ({thousands_separators(totalCompleted)})
+          </dd>
+        </dl>
       </div>
 
       <div
