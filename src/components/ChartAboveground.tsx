@@ -338,7 +338,7 @@ const ChartAboveground = () => {
         }}
       >
         <img
-          src="https://EijiGorilla.github.io/Symbols/Station_Structures_icon.png"
+          src="https://EijiGorilla.github.io/Symbols/Station_Structures_icon.svg"
           alt="Utility Logo"
           height={"55px"}
           width={"55px"}
@@ -366,7 +366,7 @@ const ChartAboveground = () => {
           >
             {percentCompleted} %
           </dd>
-          <dd
+          <div
             style={{
               color: valueLabelColor,
               fontSize: "1.2rem",
@@ -375,7 +375,7 @@ const ChartAboveground = () => {
             }}
           >
             ({thousands_separators(totalCompleted)})
-          </dd>
+          </div>
         </dl>
       </div>
 
