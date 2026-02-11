@@ -232,7 +232,7 @@ const customContentLot = new CustomContent({
     const status = event.graphic.attributes["Status"];
     const category = event.graphic.attributes["Category"];
     const component = event.graphic.attributes["Component"];
-    const end_date = event.graphic.attributes["t01__End_Date"];
+    const end_date = event.graphic.attributes["t02__End_Date"];
 
     return `
     <div style='line-height: 1.7'>
