@@ -391,7 +391,7 @@ buildingLayer.when(() => {
       case "Walls":
         wallsLayer = layer;
         wallsLayer.popupTemplate = popupTemplate;
-        wallsLayer.title = "Walls";
+        wallsLayer.title = "Walls (not monitoring)";
         wallsLayer.definitionExpression = "Component = 'UG'";
         wallsLayer.renderer = renderer;
         break;
